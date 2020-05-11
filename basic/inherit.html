@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 상속 : 글자를 다루는 속성이 주로 상속된다 */
+      .ecosystem {
+        color: brown;
+      }
+      .area p {
+        color: brown;
+      }
+      p {
+        color: darkblue !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    CSS 우선 순위
+        1. 명시도 점수가 높은 선언이 우선
+        (!important > 인라인 선언 > 아이디 > 클래스 > 태그 > 전체 > 상속)
+        2. 점수가 같은 경우 가장 마지막 우선
+        3. 명시도는 상속 규칙보다 우선
+        4. !important가 적용된 방식이 최우선
+      -->
+    <div class="ecosystem">
+      <div class="animal">
+        <div class="tiger">호랑이</div>
+        <div class="lion">사자</div>
+        <div class="elephant">코끼리</div>
+      </div>
+      <!-- 인라인 방식 -->
+      <div class="plant" style="color: darkmagenta;">식물</div>
+    </div>
+    <div class="area">
+      <p id="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui tempora
+        necessitatibus, animi quos tempore earum sed fugiat quaerat beatae,
+        voluptatum commodi culpa hic doloribus minima eveniet. Id suscipit eaque
+        veniam eligendi sed optio quaerat nesciunt enim quasi dolor mollitia
+        aspernatur voluptas, sunt quos ex a doloremque. Sequi reiciendis fugiat
+        impedit dicta maxime. Ullam asperiores obcaecati placeat labore dolore,
+        doloribus porro omnis inventore magni! Aperiam libero necessitatibus
+        facilis? Nihil a accusamus repudiandae dolor provident doloremque
+        delectus cum modi, id inventore aspernatur quod sequi saepe officia
+        placeat laborum fuga autem fugiat laboriosam architecto doloribus
+        numquam. Sapiente voluptatem ullam aliquam a natus similique?
+      </p>
+    </div>
+  </body>
+</html>

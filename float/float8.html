@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        background-color: #333333;
+      }
+      ul li {
+        list-style: none;
+      }
+      li a {
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        float: left;
+      }
+      li a:hover {
+        color: blueviolet;
+        background-color: pink;
+      }
+      nav ul::after {
+        content: "";
+        clear: both;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">SiteMap</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        background-color: wheat;
+        position: relative;
+      }
+      .box {
+        height: 100px;
+        position: absolute; /* 부모를 기준으로 위치를 지정하는 형태 */
+      }
+      .a {
+        background-color: springgreen;
+        right: 550px;
+        top: 100px;
+      }
+      .b {
+        background-color: lightskyblue;
+        left: 200px;
+        top: 100px;
+      }
+      .c {
+        background-color: hotpink;
+        right: -50px;
+        top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box a">box aaaaa</div>
+      <div class="box b">box b</div>
+      <div class="box c">boc</div>
+    </div>
+  </body>
+</html>

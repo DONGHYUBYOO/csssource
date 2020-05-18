@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        /* 
+        no-wrap(기본값) : 아이템 줄 바꿈
+        flex-direction, flex-wrap을 함께 쓰는 경우 => flex-flow :row wrap
+         */
+        flex-wrap: wrap-reverse;
+      }
+      .container .box {
+        width: 200px;
+        height: 100px;
+        border: 4px dashed;
+      }
+      .container div:first-child {
+        background-color: red;
+      }
+      .container div:nth-child(2) {
+        background-color: blue;
+      }
+      .container div:nth-child(3) {
+        background-color: green;
+      }
+      .container div:nth-child(4) {
+        background-color: purple;
+      }
+      .container div:last-child {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">박스1</div>
+      <div class="box">박스2</div>
+      <div class="box">박스3</div>
+      <div class="box">박스4</div>
+      <div class="box">박스5</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum incidunt
+      dolor placeat, voluptate at neque nam eligendi, cum quisquam quasi optio
+      sint voluptates tenetur molestias, vero similique repudiandae reiciendis
+      eius?
+    </p>
+  </body>
+</html>

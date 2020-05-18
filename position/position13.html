@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .html5news-slide {
+        border: 2px solid green;
+        width: 800px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        position: relative;
+      }
+      .html5news-slide img {
+        float: left;
+        width: 500px;
+        height: 300px;
+      }
+      .controls a {
+        background-color: black;
+        color: white;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        white-space: nowrap;
+        position: absolute;
+        top: calc(50%-25px); /* 50% 지점에서 25px 빼서 적용 */
+      }
+      .prev {
+        right: 100%;
+      }
+      .next {
+        left: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="html5news-slide">
+      <img
+        src="https://guidetoiceland.imgix.net/4747/x/0/how-to-photograph-the-northern-lights-6?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&ixlib=php-3.1.0&w=883&s=71db913b245ea325e963cd98db4d4c97"
+        alt=""
+      />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tenetur
+        velit earum dolorum ad cupiditate eum hic maiores. Dolor voluptatem
+        corrupti placeat. Quidem natus voluptatibus minus, maxime provident quos
+        recusandae!
+      </p>
+      <div class="controls">
+        <a href="#" class="prev">Previous Project</a>
+        <a href="#" class="next">Next Project</a>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background-color: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        padding: 25px;
+        order: 2;
+        background-color: white;
+      }
+      .flexbg .sidebar {
+        width: 20%;
+        padding: 25px;
+      }
+      .flexbg .left {
+        order: 1;
+        background-color: blue;
+      }
+      .flexbg .right {
+        order: 3;
+        background-color: red;
+      }
+      /* 태블릿 화면 구성 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+        .flexbg .right {
+          order: 3;
+        }
+      }
+      /* 모바일 화면 구성 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, enim
+          repudiandae inventore aspernatur voluptates sed nobis nemo? Dolorem
+          nobis quae sed debitis? Aliquid non harum aspernatur facilis at
+          laboriosam consequatur.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, enim
+          repudiandae inventore aspernatur voluptates sed nobis nemo? Dolorem
+          nobis quae sed debitis? Aliquid non harum aspernatur facilis at
+          laboriosam consequatur.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        <p>you might have some latest posts here on the left</p>
+      </aside>
+      <aside class="sidebar right">
+        <p>you might have some latest posts here on the right</p>
+      </aside>
+    </div>
+  </body>
+</html>
